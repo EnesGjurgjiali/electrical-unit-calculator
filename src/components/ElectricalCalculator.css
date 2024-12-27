@@ -1,0 +1,62 @@
+.input-container {
+  display: flex;
+  flex-direction: row; /* Arrange labels and inputs in a row */
+  justify-content: center; /* Center the entire container */
+  align-items: center; /* Vertically center the content */
+  gap: 8px; /* Space between label-input pairs */
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  width: 100%;
+}
+
+.input-item {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+  align-items: flex-start; /* Align the label to the left */
+  width: 150px; /* Set a fixed width for inputs */
+  margin-right: 18px;
+}
+
+.input-container label {
+  font-weight: bold;
+}
+
+.input-container input {
+  padding: 8px;
+  margin-bottom: 15px; /* Space between inputs */
+  width: 100%; /* Ensure input takes up the full width of its container */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-container select {
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-container select:focus {
+  border-color: #5b9bd5;
+  box-shadow: 0 0 5px rgba(91, 155, 213, 0.5);
+}
+
+/* For responsiveness on smaller screens */
+@media (max-width: 768px) {
+  .input-container {
+    flex-direction: column; /* Stack label-input pairs vertically on smaller screens */
+    align-items: center; /* Center the items */
+  }
+
+  .input-item {
+    width: 100%; /* Allow inputs to take full width on small screens */
+    margin-bottom: 10px; /* Add space between rows */
+  }
+
+  .input-container label,
+  .input-container input,
+  .input-container select {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 10px; /* Increase padding for better usability */
+  }
+}
