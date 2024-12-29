@@ -49,7 +49,7 @@ const UnitConverter = () => {
     });
 
     // Calculate the base 10 power representation
-    const scientificNotation = rawResult.toExponential(2); // 2 decimal places in scientific notation
+    const scientificNotation = rawResult.toExponential(2); 
 
     setConvertedValue({
       formatted: formattedResult,
@@ -61,7 +61,6 @@ const UnitConverter = () => {
     <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
       <h1>Shëndërroni njësitë</h1>
 
-      {/* Input Field for Value */}
       <div className="input-container">
         <label>Jepni një vlerë:</label>
         <input

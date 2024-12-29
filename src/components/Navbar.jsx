@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";  // Import Link from react-router-dom
+import { Link } from "react-router-dom"; 
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -19,10 +19,10 @@ const Navbar = () => {
         </div>
         <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
           <li>
-            <Link to="/">Kalkulatori Elektrik</Link> {/* Use Link here */}
+            <Link to="/">Kalkulatori Elektrik</Link> 
           </li>
           <li>
-            <Link to="/unit-converter">Shëndërrimi i Njësive</Link> {/* Use Link here */}
+            <Link to="/unit-converter">Shëndërrimi i Njësive</Link> 
           </li>
         </ul>
       </div>

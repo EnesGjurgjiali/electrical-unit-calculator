@@ -41,22 +41,3 @@
   box-shadow: 0 0 5px rgba(91, 155, 213, 0.5);
 }
 
-/* For responsiveness on smaller screens */
-@media (max-width: 768px) {
-  .input-container {
-    flex-direction: column; /* Stack label-input pairs vertically on smaller screens */
-    align-items: center; /* Center the items */
-  }
-
-  .input-item {
-    width: 100%; /* Allow inputs to take full width on small screens */
-    margin-bottom: 10px; /* Add space between rows */
-  }
-
-  .input-container label,
-  .input-container input,
-  .input-container select {
-    font-size: 14px; /* Adjust font size for smaller screens */
-    padding: 10px; /* Increase padding for better usability */
-  }
-}

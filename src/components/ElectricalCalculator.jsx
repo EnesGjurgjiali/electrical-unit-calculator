@@ -74,7 +74,7 @@
       </optgroup>
       <optgroup label="Rezistanca (Resistance)">
         <option value="resistance">Rezistanca (R = U / I)</option>
-        <option value="specificResistance">Rezistenca me rezistivitet (R = ρ * (L / A))</option>
+        <option value="specificResistance">Rez. Specifike (R = ρ * (L / A))</option>
       </optgroup>
       <optgroup label="Ligji i Ohm'it">
         <option value="ohmsLaw">Ligji i Ohm'it (U = I * R)</option>
