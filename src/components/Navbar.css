@@ -12,7 +12,7 @@
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .nav-links {
@@ -29,13 +29,28 @@
   color: #fff;
   text-decoration: none;
   font-size: 18px;
-  padding: 8px 16px;
-  transition: .3s ease;
+  padding: 8px 10px;
+  position: relative; /* Required for positioning the ::after element */
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: rgb(81, 171, 226); /* The color of the underline */
+  transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-  background-color: rgb(81, 171, 226);
-  border-radius: 4px;
+  color: rgb(81, 171, 226); /* Optional: Change text color on hover */
+}
+
+.nav-links a:hover::after {
+  width: 100%; /* Expand the underline on hover */
 }
 
 /* Hamburger Menu for Mobile */
@@ -69,7 +84,7 @@
     flex-direction: column;
     position: absolute;
     top: 60px;
-    right: 20px;
+    left: 10px;
     background-color: #333;
     padding: 20px;
     border-radius: 8px;

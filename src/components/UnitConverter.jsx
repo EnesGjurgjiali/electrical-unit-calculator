@@ -48,12 +48,18 @@ const UnitConverter = () => {
       maximumFractionDigits: 12,
     });
 
-    // Calculate the base 10 power representation
-    const scientificNotation = rawResult.toExponential(2); 
+    // Calculate the base 10 power representation with superscript
+    const scientificNotation = rawResult.toExponential(2);
+    const [mantissa, exponent] = scientificNotation.split("e");
+    const powerRepresentation = (
+      <>
+        10<sup>{parseInt(exponent, 10)}</sup>
+      </>
+    );
 
     setConvertedValue({
       formatted: formattedResult,
-      scientific: scientificNotation,
+      scientific: powerRepresentation,
     });
   };
 
@@ -68,6 +74,7 @@ const UnitConverter = () => {
           value={value}
           onChange={handleInputChange}
           placeholder="Jepni një vlerë"
+          required
         />
       </div>
 
