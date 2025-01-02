@@ -65,7 +65,7 @@
       className="input-select"
     >
       <optgroup label="Intensiteti i Rrymes (Current)">
-        <option value="current">Intensiteti i rrymes (I = q / t)</option>
+        <option value="current">Intensiteti i rrymes elektrike (I = q / t)</option>
         <option value="charge">Ngarkesa elektrike (q = I * t)</option>
       </optgroup>
       <optgroup label="Tensioni (Voltage)">
@@ -74,7 +74,7 @@
       </optgroup>
       <optgroup label="Rezistanca (Resistance)">
         <option value="resistance">Rezistanca (R = U / I)</option>
-        <option value="specificResistance">Rez. Specifike (R = ρ * (L / A))</option>
+        <option value="specificResistance">Rezistanca (R = ρ * (L / A))</option>
       </optgroup>
       <optgroup label="Ligji i Ohm'it">
         <option value="ohmsLaw">Ligji i Ohm'it (U = I * R)</option>
@@ -148,7 +148,7 @@
           {calculationType === "specificResistance" && (
             <div className="input-container">
               <div className="input-item">
-                <label>Rezistenca speciike (ρ [Ωm]):</label>
+                <label>Rez. specifike (ρ [Ωm]):</label>
                 <input type="number" name="resistivity" value={inputs.resistivity} onChange={handleInputChange} />
               </div>
               <div className="input-item">
@@ -164,11 +164,11 @@
           {calculationType === "ohmsLaw" && (
             <div className="input-container">
               <div className="input-item">
-                <label>Current (I in Amperes):</label>
+                <label>Intensiteti (I [A]):</label>
                 <input type="number" name="i" value={inputs.i} onChange={handleInputChange} />
               </div>
               <div className="input-item">
-                <label>Resistance (R in Ohms):</label>
+                <label>Rezistenca (R [Ω]):</label>
                 <input type="number" name="r" value={inputs.r} onChange={handleInputChange} />
               </div>
             </div>
