@@ -1,8 +1,15 @@
-# React + Vite
+Electrical Calculator & Unit Converter
+A React-based web application featuring an Electrical Calculator and a Unit Converter. The app allows users to perform various electrical calculations and convert values between different units across multiple scales.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Electrical Calculator:
 
-Currently, two official plugins are available:
+Perform various electrical calculations such as:
+Ohm's Law
+Power, Voltage, Current, and Resistance
+Helps users calculate missing electrical values based on known ones.
+Unit Converter:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Convert numbers between different units across a range of scales, such as:
+Metric system: Kilo, Milli, Hecto, Peta, etc.
+Custom unit conversions between various units.
